@@ -1,6 +1,6 @@
 #include<iostream>
 #include"hnameh.h"
-#include<conio.h>
+#include<windows.h>
 using namespace std;
 class A
 {
@@ -223,7 +223,6 @@ int main()
 	db222.fun22();
 	db222.fun322();
 	cout<<endl<<endl;
-	getch();
-	cout<<"ENTER ANY KEY TO TERMINATE THE PROGRAM"<<endl;
+	system("pause");
 	return 0;
 }

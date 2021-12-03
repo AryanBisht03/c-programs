@@ -1,0 +1,229 @@
+#include<iostream>
+#include"hnameh.h"
+#include<conio.h>
+using namespace std;
+class A
+{
+public:
+void fun()
+ {
+ 	cout<<"hy i am the parent function"<<endl;
+	 }	
+};
+
+class B:public A
+{
+public:
+void fun1()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B"<<endl;
+	 }	
+};
+
+class C:public A
+{
+public:
+void fun2()
+ {
+ 	cout<<"hy i am the parent function ka doosra beta C"<<endl;
+	 }	
+};
+
+class B1:public B
+{
+public:
+void fun11()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka pehla beta"<<endl;
+	 }	
+};
+
+
+class B11:public B1
+{
+public:
+void fun111()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka pehla beta ka pehla beta"<<endl;
+	 }	
+};
+
+
+class B12:public B1
+{
+public:
+void fun112()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka pehla beta ka doosra beta"<<endl;
+	 }	
+};
+
+
+class B2:public B
+{
+public:
+void fun12()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka doosra beta"<<endl;
+	 }	
+};
+
+class B21:public B2
+{
+public:
+void fun221()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka doosre beta ka pehla beta"<<endl;
+	 }	
+};
+
+
+
+class B22:public B2
+{
+public:
+void fun222()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta B ka doosre beta ka doosra beta"<<endl;
+	 }	
+};
+
+class C1:public C
+{
+public:
+void fun21()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka pehla beta"<<endl;
+	 }	
+};
+
+class C2:public C
+{
+public:
+void fun22()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka doosra beta"<<endl;
+	 }	
+};
+
+class C11:public C1
+{
+public:
+void fun111()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka pehle beta ka pehla beta"<<endl;
+	 }	
+};
+
+
+class C12:public C1
+{
+public:
+void fun132()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka pehle beta ka doosra beta"<<endl;
+	 }	
+};
+
+
+class C21:public C2
+{
+public:
+void fun321()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka doosre beta ka pehla beta"<<endl;
+	 }	
+};
+
+
+class C22:public C2
+{
+public:
+void fun322()
+ {
+ 	cout<<"hy i am the parent function ka pehla beta C ka doosre beta ka doosra beta"<<endl;
+	 }	
+};
+
+
+
+int main()
+{
+	name();
+	A d;
+	d.fun();
+	cout<<endl<<endl;
+	B d1;
+	d1.fun();
+	d1.fun1();
+	cout<<endl<<endl;
+	B1 d11;
+	d11.fun();
+	d11.fun1();
+	d11.fun11();
+	cout<<endl<<endl;
+	B2 d12;
+	d12.fun();
+	d12.fun1();
+	d12.fun12();
+	cout<<endl<<endl;
+	C d2;
+	d2.fun();
+	d2.fun2();
+	cout<<endl<<endl;
+	C1 d21;
+	d21.fun();
+	d21.fun2();
+	d21.fun21();
+	cout<<endl<<endl;
+	C2 d22;
+	d22.fun();
+	d22.fun2();
+	d22.fun22();
+	cout<<endl<<endl;
+	B11 b111;
+	b111.fun();
+	b111.fun1();
+	b111.fun11();
+	b111.fun111();
+	cout<<endl<<endl;
+	B12 d112;
+	d112.fun();
+	d112.fun1();
+	d112.fun11();
+	d112.fun112();
+	cout<<endl<<endl;
+	B21 d221;
+	d221.fun();
+	d221.fun1();
+	d221.fun12();
+	d221.fun221();
+	cout<<endl<<endl;
+	C11 d111;
+	d111.fun();
+	d111.fun2();
+	d111.fun21();
+	d111.fun111();
+	cout<<endl<<endl;
+	C12 db112;
+	db112.fun();
+	db112.fun2();
+	db112.fun21();
+	db112.fun132();
+	cout<<endl<<endl;
+	C21 db221;
+	db221.fun();
+	db221.fun2();
+	db221.fun22();
+	db221.fun321();
+	cout<<endl<<endl;
+	C22 db222;
+	db222.fun();
+	db222.fun2();
+	db222.fun22();
+	db222.fun322();
+	cout<<endl<<endl;
+	getch();
+	cout<<"ENTER ANY KEY TO TERMINATE THE PROGRAM"<<endl;
+	return 0;
+}

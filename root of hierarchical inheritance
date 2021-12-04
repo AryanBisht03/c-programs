@@ -1,0 +1,455 @@
+#include<iostream>
+#include"hnameh.h"
+#include<windows.h>
+using namespace std;
+class A
+{
+	public:
+		void fun()
+		{
+			cout<<"i m the greatest"<<endl;
+		}
+};
+class B:public A
+{
+	public:
+		void fun2()
+		{
+			cout<<"i m first son of A"<<endl;
+		}
+};
+class B1:public B
+{
+	public:
+		void fun3()
+		{
+			cout<<"i m first son of B"<<endl;
+		}
+};
+class B11:public B1
+{
+	public:
+		void fun6()
+		{
+			cout<<"i m first son of B1"<<endl;
+		}
+};
+class B111:public B11
+{
+	public:
+		void fun10()
+		{
+			cout<<"i m first son of B11"<<endl;
+		}
+};
+class B112:public B11
+{
+	public:
+		void fun11()
+		{
+			cout<<"i m second son of B11"<<endl;
+		}
+};
+class B12:public B1
+{
+	public:
+		void fun7()
+		{
+			cout<<"i m second son of B1"<<endl;
+		}
+};
+class B121:public B12
+{
+	public:
+		void fun12()
+		{
+			cout<<"i m first son of B12"<<endl;
+		}
+};
+class B122:public B12
+{
+	public:
+		void fun13()
+		{
+			cout<<"i m second son of B12"<<endl;
+		}
+};
+class B2:public B
+{
+	public:
+		void fun5()
+		{
+			cout<<"i m second son of B"<<endl;
+		}
+};
+class B21:public B2
+{
+	public:
+		void fun8()
+		{
+			cout<<"i m first son of B2"<<endl;
+		}
+};
+class B211:public B21
+{
+	public:
+		void fun14()
+		{
+			cout<<"i m first son of B21"<<endl;
+		}
+};
+class B212:public B21
+{
+	public:
+		void fun15()
+		{
+			cout<<"i m second son of B21"<<endl;
+		}
+};
+
+class B22:public B2
+{
+	public:
+		void fun9()
+		{
+			cout<<"i m second son of B2"<<endl;
+		}
+};
+
+class B221:public B22
+{
+	public:
+		void fun16()
+		{
+			cout<<"i m first son of B22"<<endl;
+		}
+};
+class B222:public B22
+{
+	public:
+		void fun17()
+		{
+			cout<<"i m second son of B22"<<endl;
+		}
+};
+class C:public A
+{
+	public:
+		void fun4()
+		{
+			cout<<"i m first son of A"<<endl;
+		}
+};
+class C1:public C
+{
+	public:
+		void fun18()
+		{
+			cout<<"i m first son of C"<<endl;
+		}
+};
+class C11:public C1
+{
+	public:
+		void fun19()
+		{
+			cout<<"i m first son of C1"<<endl;
+		}
+};
+class C111:public C11
+{
+	public:
+		void fun20()
+		{
+			cout<<"i m first son of C11"<<endl;
+		}
+};
+class C112:public C11
+{
+	public:
+		void fun21()
+		{
+			cout<<"i m second son of C11"<<endl;
+		}
+};
+class C12:public C1
+{
+	public:
+		void fun22()
+		{
+			cout<<"i m second son of C1"<<endl;
+		}
+};
+class C121:public C12
+{
+	public:
+		void fun23()
+		{
+			cout<<"i m first son of C12"<<endl;
+		}
+};
+class C122:public C12
+{
+	public:
+		void fun24()
+		{
+			cout<<"i m second son of C12"<<endl;
+		}
+};
+class C2:public C
+{
+	public:
+		void fun25()
+		{
+			cout<<"i m second son of C"<<endl;
+		}
+};
+class C21:public C2
+{
+	public:
+		void fun26()
+		{
+			cout<<"i m first son of C2"<<endl;
+		}
+};
+class C211:public C21
+{
+	public:
+		void fun27()
+		{
+			cout<<"i m first son of C21"<<endl;
+		}
+};
+class C212:public C21
+{
+	public:
+		void fun28()
+		{
+			cout<<"i m second son of C21"<<endl;
+		}
+};
+
+class C22:public C2
+{
+	public:
+		void fun29()
+		{
+			cout<<"i m second son of C2"<<endl;
+		}
+};
+
+class C221:public C22
+{
+	public:
+		void fun30()
+		{
+			cout<<"i m first son of C22"<<endl;
+		}
+};
+class C222:public C22
+{
+	public:
+		void fun31()
+		{
+			cout<<"i m second son of C22"<<endl;
+		}
+};
+
+
+int main()
+{
+	name();
+	A a;
+	B b; 
+	C c;
+	B1 b1;
+	B2 b2;
+	C1 c1;
+	C2 c2;
+	B11 b11;
+	B12 b12;
+	B21 b21;
+	B22 b22;
+	C11 c11;
+	C12 c12;
+	C21 c21;
+	C22 c22;
+	B111 b111;
+	B112 b112;
+	B121 b121;
+	B122 b122;
+	B211 b211;
+	B212 b212;
+	B221 b221;
+	B222 b222;
+	C111 c111;
+	C112 c112;
+	C121 c121;
+	C122 c122;
+	C211 c211;
+	C212 c212;
+	C221 c221;
+	C222 c222;
+	a.fun();
+	cout<<endl<<endl<<endl;
+	b.fun();
+	b.fun2();
+	cout<<endl<<endl<<endl;
+	c.fun();
+	c.fun4();
+	cout<<endl<<endl<<endl;
+	b1.fun();
+	b1.fun2();
+	b1.fun3();
+	cout<<endl<<endl<<endl;
+	b2.fun();
+	b2.fun2();
+	b2.fun5();
+	cout<<endl<<endl<<endl;
+	c1.fun();
+	c1.fun18();
+	c1.fun4();
+	cout<<endl<<endl<<endl;
+	c2.fun();
+	c2.fun25();
+	c2.fun4();
+	cout<<endl<<endl<<endl;
+	b11.fun();
+	b11.fun2();
+	b11.fun3();
+	b11.fun6();
+	cout<<endl<<endl<<endl;
+	b12.fun();
+	b12.fun2();
+	b12.fun3();
+	b12.fun7();
+	cout<<endl<<endl<<endl;
+	b21.fun();
+	b21.fun2();
+	b21.fun5();
+	b21.fun8();
+	cout<<endl<<endl<<endl;
+	b22.fun();
+	b22.fun2();
+	b22.fun5();
+	b22.fun9();
+	cout<<endl<<endl<<endl;
+	c11.fun();
+	c11.fun18();
+	c11.fun19();
+	c11.fun4();
+	cout<<endl<<endl<<endl;
+	c12.fun();
+	c12.fun18();
+	c12.fun22();
+	c12.fun4();
+	cout<<endl<<endl<<endl;
+	c21.fun();
+	c21.fun25();
+	c21.fun26();
+	c21.fun4();
+	cout<<endl<<endl<<endl;
+	c22.fun();
+	c22.fun25();
+	c22.fun29();
+	c22.fun4();
+	cout<<endl<<endl<<endl;
+	b111.fun();
+	b111.fun10();
+	b111.fun2();
+	b111.fun3();
+	b111.fun6();
+	cout<<endl<<endl<<endl;
+	b112.fun();
+	b112.fun11();
+	b112.fun2();
+	b112.fun3();
+	b112.fun6();
+	cout<<endl<<endl<<endl;
+	b121.fun();
+	b121.fun12();
+	b121.fun2();
+	b121.fun3();
+	b121.fun7();
+	cout<<endl<<endl<<endl;
+	b122.fun();
+	b122.fun13();
+	b122.fun2();
+	b122.fun3();
+	b122.fun7();
+	cout<<endl<<endl<<endl;
+	b221.fun();
+	b221.fun16();
+	b221.fun2();
+	b221.fun5();
+	b221.fun9();
+	cout<<endl<<endl<<endl;
+	b212.fun();
+	b212.fun15();
+	b212.fun2();
+	b212.fun5();
+	b212.fun8();
+	cout<<endl<<endl<<endl;
+	b221.fun();
+	b221.fun16();
+	b221.fun2();
+	b221.fun5();
+	b221.fun9();
+	cout<<endl<<endl<<endl;
+	b222.fun();
+	b222.fun17();
+	b222.fun2();
+	b222.fun5();
+	b222.fun9();
+	cout<<endl<<endl<<endl;
+	c111.fun();
+	c111.fun18();
+	c111.fun19();
+	c111.fun20();
+	c111.fun4();
+	cout<<endl<<endl<<endl;
+	c112.fun();
+	c112.fun18();
+	c112.fun19();
+	c112.fun21();
+	c112.fun4();
+	cout<<endl<<endl<<endl;
+	c121.fun();
+	c121.fun18();
+	c121.fun22();
+	c121.fun23();
+	c121.fun4();
+	cout<<endl<<endl<<endl;
+	c122.fun();
+	c122.fun18();
+	c122.fun22();
+	c122.fun24();
+	c122.fun4();
+	cout<<endl<<endl<<endl;
+	c211.fun();
+	c211.fun25();
+	c211.fun26();
+	c211.fun27();
+	c211.fun4();
+	cout<<endl<<endl<<endl;
+	c212.fun();
+	c212.fun25();
+	c212.fun26();
+	c212.fun28();
+	c212.fun4();
+	cout<<endl<<endl<<endl;
+	c221.fun();
+	c221.fun25();
+	c221.fun29();
+	c221.fun30();
+	c221.fun4();
+	cout<<endl<<endl<<endl;
+	c222.fun();
+	c222.fun25();
+	c222.fun29();
+	c222.fun31();
+	c222.fun4();
+	cout<<endl<<endl<<endl;
+	system("pause");
+	return 0;
+}
